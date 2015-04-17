@@ -83,6 +83,7 @@
     <Compile Include="ComplexProperties\PeopleInsights\SkillInsightValue.cs" />
     <Compile Include="ComplexProperties\PeopleInsights\StringInsightValue.cs" />
     <Compile Include="ComplexProperties\PeopleInsights\UserProfilePicture.cs" />
+    <Compile Include="ComplexProperties\ReferenceAttachment.cs" />
     <Compile Include="Core\Requests\GetOMEConfigurationRequest.cs" />
     <Compile Include="Core\Requests\GetPeopleInsightsRequest.cs" />
     <Compile Include="Core\Requests\GetUserPhotoRequest.cs" />
