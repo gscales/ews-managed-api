@@ -70,6 +70,11 @@ namespace Microsoft.Exchange.WebServices.Data
                     {
                         this.attachment = new ItemAttachment(reader.Service);
                     }
+                    else if (string.Equals(reader.LocalName, XmlElementNames.ReferenceAttachment, StringComparison.OrdinalIgnoreCase))
+                    {
+                        this.attachment = new ReferenceAttachment(reader.Service);
+                    }
+
                 }
 
                 if (this.attachment != null)
@@ -103,6 +108,10 @@ namespace Microsoft.Exchange.WebServices.Data
                     else if (attachmentArrayJsonObject.ContainsKey(XmlElementNames.ItemAttachment))
                     {
                         this.attachment = new ItemAttachment(service);
+                    }
+                    else if (attachmentArrayJsonObject.ContainsKey(XmlElementNames.ReferenceAttachment))
+                    {
+                        this.attachment = new ReferenceAttachment(service);
                     }
                 }
 
